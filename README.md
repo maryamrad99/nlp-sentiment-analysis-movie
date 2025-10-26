@@ -4,7 +4,7 @@
 
 ## Project Overview
 This project explores how different Natural Language Processing (NLP) models can classify the sentiment of IMDb movie reviews as **positive** or **negative**.  
-The study compares classical machine learning algorithms — **Naive Bayes**, **Logistic Regression**, and **Support Vector Machine (SVM)** — with a modern transformer-based deep learning model, **BERT (Bidirectional Encoder Representations from Transformers)**.
+The study compares classical machine learning algorithms, **Naive Bayes**, **Logistic Regression**, and **Support Vector Machine (SVM)**, with a modern transformer-based deep learning model, **BERT (Bidirectional Encoder Representations from Transformers)**.
 
 The goal is to evaluate how well these models understand language sentiment, balancing **accuracy, interpretability, and computational efficiency**.
 
@@ -12,12 +12,12 @@ The goal is to evaluate how well these models understand language sentiment, bal
 
 ## Models Implemented
 ### Classical Machine Learning Models
-- **Naive Bayes (NB)** — simple probabilistic model that performs well on sparse data.  
-- **Logistic Regression (LR)** — linear model that captures sentiment polarity effectively.  
-- **Support Vector Machine (SVM)** — margin-based classifier that generalizes well on TF-IDF features.
+- **Naive Bayes (NB)** : simple probabilistic model that performs well on sparse data.  
+- **Logistic Regression (LR)** : linear model that captures sentiment polarity effectively.  
+- **Support Vector Machine (SVM)** : margin-based classifier that generalizes well on TF-IDF features.
 
 ### Transformer Model
-- **BERT (Fine-Tuned)** — pre-trained deep learning model fine-tuned on a smaller IMDb subset for sentiment classification.
+- **BERT (Fine-Tuned)** : pre-trained deep learning model fine-tuned on a smaller IMDb subset for sentiment classification.
 
 ---
 
@@ -36,10 +36,10 @@ BERT demonstrated high precision and contextual understanding, even when trained
 ---
 
 ## Workflow
-1. **Data Preprocessing** — text cleaning, tokenization, stopword removal, stemming, and lemmatization.  
-2. **Feature Extraction** — using TF-IDF for classical models and tokenization for BERT.  
-3. **Model Training** — each model trained separately using Python (v3.12), scikit-learn, and Hugging Face Transformers.  
-4. **Evaluation** — accuracy, precision, recall, F1-score, and confusion matrices were computed for each model.  
+1. **Data Preprocessing** : text cleaning, tokenization, stopword removal, stemming, and lemmatization.  
+2. **Feature Extraction** : using TF-IDF for classical models and tokenization for BERT.  
+3. **Model Training** : each model trained separately using Python (v3.12), scikit-learn, and Hugging Face Transformers.  
+4. **Evaluation** : accuracy, precision, recall, F1-score, and confusion matrices were computed for each model.  
 
 ---
 
@@ -62,9 +62,6 @@ BERT demonstrated high precision and contextual understanding, even when trained
 - Fine-tune BERT on the full IMDb dataset and extend training epochs.  
 - Test smaller transformer models like **DistilBERT** for efficiency.  
 - Try hybrid (ensemble) methods combining classical and transformer models.  
-
-
----
 
 
 ---
